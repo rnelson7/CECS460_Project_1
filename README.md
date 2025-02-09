@@ -1,5 +1,9 @@
 # CECS460_Project_1
 
+# Top-Level Module (`memory_game_top`)
+
+The `memory_game_top` module integrates all the components of the memory game, including BRAM initialization, player input handling, feedback generation, and address management. It connects the switches and button for player interaction, the LEDs for feedback, and the BRAM for storing target values. This module serves as the central controller, ensuring seamless communication between all subsystems to deliver a functional and engaging memory matching game experience.
+
 # BRAM Initialization Module (`bram_init`)
 
 The `bram_init` module initializes a Block RAM (BRAM) with 10 predefined 4-bit random values, which serve as the target values for the memory matching game. During FPGA configuration, the BRAM is preloaded with these values, and the module provides a simple interface to read the stored data based on an input address. This module acts as the core memory component of the game, allowing players to guess and compare their inputs against the stored values. The design ensures efficient and reliable access to the BRAM, enabling seamless gameplay functionality.
