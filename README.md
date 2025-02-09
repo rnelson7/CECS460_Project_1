@@ -24,6 +24,10 @@ The `address_counter` module controls the game's progression by moving to the ne
 
 The `memory_game_tb` testbench simulates the behavior of the memory game design by providing inputs (switches and button presses) and observing the outputs (LEDs). It tests various scenarios, including correct and incorrect guesses, as well as the looping mechanism of the BRAM addresses. The testbench ensures the functionality of the game logic, including BRAM access, player input handling, and feedback generation, is verified before implementation on hardware.
 
+# Constraints File (`constraints.xdc`)
+
+The `constraints.xdc` file defines the physical pin mappings and timing constraints for the memory game design on the Zybo Z7 board. It specifies the connections for the clock signal, switches, button, and LEDs, ensuring the design interfaces correctly with the hardware.
+
 # Testbench Waveform
 
 <img src="waveform.png">
